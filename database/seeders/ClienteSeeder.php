@@ -1,0 +1,74 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Cliente;
+use Illuminate\Database\Seeder;
+
+class ClienteSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $registers = [
+            ['nome' => 'Cliente Test',
+                'email' => 'ClienteTest@gmail.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 1,'user_id' => 1],
+            ['nome' => 'Barbeiro Test',
+                'email' => 'BarbeiroTest@gmail.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 2,'user_id' => 2],
+            ['nome' => 'Sandra Jennifer Eliane da Silva',
+                'email' => 'sandrajennifereliane@iglod.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 3,'user_id' => 3],
+            ['nome' => 'Danilo Samuel Lorenzo Nascimento',
+                'email' => 'danilosamuellore@defensoria.sp.gov.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 4,'user_id' => 4],
+            ['nome' => 'Filipe Matheus Ribeiro',
+                'email' => 'filipematheusribeiro@hotamail.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 5,'user_id' => 5],
+            ['nome' => 'Isis Clarice Tatiane Pires',
+                'email' => 'isisclaricet@abrangenciacorretora.com.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 6,'user_id' => 6],
+            ['nome' => 'Vanessa Elaine da Rocha',
+                'email' => 'vanessaelaine@simoesmendonca.adv.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 7,'user_id' => 7],
+            ['nome' => 'Alícia Catarina Olivia Sales',
+                'email' => 'aliciacatarinaolives@ambarnet.com.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 8,'user_id' => 8],
+            ['nome' => 'Leandro Elias da Cunha',
+                'email' => 'lleandroeliasdacunha@ci.com.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 9,'user_id' => 9],
+            ['nome' => 'Caleb Tomás da Cruz',
+                'email' => 'calebtomasdacruz-90@plastic.com.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 10,'user_id' => 10],
+            ['nome' => 'Priscila Eliane Adriana Freitas',
+                'email' => 'priscilaelianea85@br.flextronics.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 11,'user_id' => 11],
+            ['nome' => 'Emanuel Igor Pietro da Mota',
+                'email' => 'emanueligorpietroda@mfb.com.br',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 12,'user_id' => 12],
+            ['nome' => 'Luiz Murilo Moraes',
+                'email' => 'lluizmurilomoraes@hotmmail.com',
+                'telefone' => '+5531984571655',
+                'endereco_id' => 13,'user_id' => 13]
+        ];
+
+        foreach ($registers as $register) {
+            Cliente::create($register);
+        };
+    }
+}
