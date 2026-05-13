@@ -1,9 +1,9 @@
 <template>
     <ul class="list-group">
-        <div>
-            <span class="text-success text-center">Agendado: {{ store.agendados.length }}</span>
+        <div class="p-2">
+            <span class="text-success">Agendado: {{ store.agendados.length }}</span>
             <li v-for="(dado, i) in store.agendados" :key="i">
-                <div class="p-2">
+                <div>
                     <strong>Salao: </strong> <br>
                     {{ dado.nome }} <br>
                     <strong>Horario: </strong> <br>

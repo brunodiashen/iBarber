@@ -1,7 +1,7 @@
 <template>
     <ul class="list-group" style="width: 220px;">
-        <div>
-            <span class="text-primary text-center">Solicitado: {{ store.pendentes.length }}</span>
+        <div class="p-2">
+            <span class="text-primary">Solicitado: {{ store.pendentes.length }}</span>
             <li v-for="(dado, i) in store.pendentes" :key="i">
                 <div class="mx-3 pb-1 border-bottom border-2">
                     <strong>Salao: </strong> <br>
