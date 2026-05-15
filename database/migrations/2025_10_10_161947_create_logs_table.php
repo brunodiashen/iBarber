@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('mensagem');
             $table->string('rota');
             $table->string('codigo');
-            $table->string('erro')->nullable();
-            $table->string('request')->nullable();
+            $table->text('erro')->nullable();
+            $table->text('request')->nullable();
             $table->foreignId('tipo_operacao_log_id')->constrained();
             $table->foreignId('entidade_log_id')->constrained();
             $table->timestamps();

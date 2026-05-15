@@ -28,7 +28,7 @@ class PendenteSeeder extends Seeder
         for ($i=0; $i < 100; $i++) { 
             $register = Pendente::create([
                 'data' => $this->generateRandomDate(),
-                'cliente_id' => random_int(2, 13),
+                'cliente_id' => random_int(3, 13),
                 'barbeiro_id' => 1
             ]);
 
