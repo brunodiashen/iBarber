@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repositories\Contract\LogContract;
+use App\Repositories\LogRepository;
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(LogContract::class, LogRepository::class);
     }
 
     /**

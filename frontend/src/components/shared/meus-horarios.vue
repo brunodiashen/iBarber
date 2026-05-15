@@ -5,9 +5,11 @@
             Meus horarios
         </button>
         <ul class="dropdown-menu" aria-labelledby="meus-horarios">
-            <horariosAgendado />
-            <hr>
-            <horariosPendente />
+            <div class="p-2" style="width: 220px;">
+                <horariosAgendado />
+                <hr>
+                <horariosPendente />
+            </div>
         </ul>
     </div>
 </template>

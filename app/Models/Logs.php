@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Log extends Model
+class Logs extends Model
 {
     protected $fillable = [
-        'mensagem','rota','codigo','erro',
+        'mensagem','rota','codigo','erro','request',
         'tipo_operacao_log_id','entidade_log_id'
     ];
 

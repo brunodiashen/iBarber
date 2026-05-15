@@ -18,7 +18,9 @@ class DatabaseSeeder extends Seeder
             ClienteSeeder::class,
             IntervaloSeeder::class,
             ServicosSeeder::class,
-            PendenteSeeder::class
+            PendenteSeeder::class,
+            TipoOperacaoLogSeeder::class,
+            EntidadeLogSeeder::class
         ]);
     }
 }
